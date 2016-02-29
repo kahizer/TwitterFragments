@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ComposeActivity">
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:id="@+id/btDiscard"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="OnDiscard"
+        android:background="@android:color/transparent"
+        android:textColor="#55acee"
+        android:textSize="45dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/ivAccountProfilePicture"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btDiscard"
+        android:padding="5dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etStatus"
+        android:layout_below="@+id/ivAccountProfilePicture"
+        android:maxLength="140"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Tweet"
+        android:id="@+id/btPostTweet"
+        android:background="#55acee"
+        android:textColor="#ffffff"
+        android:onClick="OnSendPost"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/ivAccountProfilePicture"
+        android:layout_alignEnd="@+id/ivAccountProfilePicture" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCharacterCount"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/btPostTweet"
+        android:layout_toLeftOf="@+id/btPostTweet"
+        android:layout_alignBottom="@+id/btPostTweet"
+        android:text="140" />
+
+</RelativeLayout>
